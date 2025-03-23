@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form Certificate</title>
+        <link rel="stylesheet" href="Registration_Certificate_styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">
+                    Registration Form
+                </h1>
+                <p id="description" class="description text-center">
+                    Please fill out this form to register a new account
+                </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="first-name" id="first-name-label">First Name</label>
+                    <input required class="form-control" name="first-name" id="first-name" type="text" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="last-name" id="last-name-label">Last Name</label>
+                    <input required class="form-control" name="last-name" id="last-name" type="text" placeholder="Smith">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input required id="email" class="form-control" type="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone" id="phone-label">Phone number</label>
+                    <input required id="phone-number" class="form-control" type="tel" placeholder="8 (000)-000-00-00">
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <span class="clue">(optional)</span>
+                    <input id="number" class="form-control" type="number" name="age" min="18" max="60" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <label id="password-label">Password</label>
+                    <input required class="form-control" name="password" id="password" type="text" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <p>
+                        Select the type of account
+                    </p>
+                    <select id="dropdown" class="form-control" name="accountType" required>
+                        <option disabled="" selected="" value="">Select a type</option>
+                        <option value="free">Free</option>
+                        <option value="pro">Pro (5% per month)</option>
+                        <option value="premium">Premium (10% per month)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>
+                        How did you find out about us?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="youtube" type="checkbox">
+                        YouTube
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="telegram" type="checkbox">
+                        Telegram
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="x" type="checkbox">
+                        X
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="instagram" type="checkbox">
+                        Instagram
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="reddit" type="checkbox">
+                        Reddit
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="referrer" value="other" type="checkbox">
+                        Other
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Would you like to receive news outlets?</p>
+                    <label>
+                        <input checked="" value="yes" type="radio" name="news-outlets" class="input-radio">
+                        Yes
+                    </label>
+                    <label>
+                        <input value="no" type="radio" name="news-outlets" class="input-radio">
+                        No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>
+                        Want to leave some feedback?
+                    </p>
+                        <textarea class="input-textarea" name="comment" id="comment" placeholder="This registration form is really well done!"></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button" type="submit">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
